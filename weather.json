@@ -1,0 +1,44 @@
+{
+    "coord":{
+       "lon":-82,
+       "lat":27
+    },
+    "weather":[
+       {
+          "id":803,
+          "main":"Clouds",
+          "description":"broken clouds",
+          "icon":"04d"
+       }
+    ],
+    "base":"stations",
+    "main":{
+       "temp":304.67,
+       "feels_like":307.82,
+       "temp_min":301.48,
+       "temp_max":307.05,
+       "pressure":1014,
+       "humidity":55
+    },
+    "visibility":10000,
+    "wind":{
+       "speed":1.79,
+       "deg":88,
+       "gust":3.58
+    },
+    "clouds":{
+       "all":75
+    },
+    "dt":1652983345,
+    "sys":{
+       "type":2,
+       "id":2032512,
+       "country":"US",
+       "sunrise":1652956697,
+       "sunset":1653005456
+    },
+    "timezone":-14400,
+    "id":4158060,
+    "name":"Harbour Heights",
+    "cod":200
+ }
