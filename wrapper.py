@@ -9,6 +9,8 @@ def wrap(text, line_length):
     # Returns:
     # A wrapped string.
     # """
+    if line_length < 1:
+        raise ValueError("line_length {} is not positive".format(line_length))
     words = text.split()
     lines_of_words = []
     current_line_length = line_length
@@ -23,7 +25,8 @@ def wrap(text, line_length):
     assert all(len(line) <= line_length for line in result.splitlines())
     # this assertion takes the string we're about to return, splits it into lines using the splitlines method,and checks that the length of each line is less than or equal to the specified line lenght 
     
-    return result    
+    print(result) 
+    # return result   
     
  
 test_line_text = "The waning moon shines dimly in the sky," \
@@ -31,4 +34,4 @@ test_line_text = "The waning moon shines dimly in the sky," \
 "Two baby chicks crucified together, a cruel trap" \
 "Ah, if only the love that clouds the present could stay vividly in my heart"\
     
-wrap(test_line_text, 5)
+wrap(test_line_text, 50)
